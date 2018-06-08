@@ -148,10 +148,10 @@ if __name__ == "__main__":
     create_table()
     page_num = get_hot_page_num()
     hot_datas = []
-    request_before()
+    #request_before()
     for i in range(1, page_num+1):
         page_hot_data = get_hot_datas_of_page(i)
         for data in page_hot_data:
             hot_datas.append(data)
-        time.sleep(3)
-    #save_hot_datas(hot_datas)
+        time.sleep(2)
+    save_hot_datas(hot_datas)
